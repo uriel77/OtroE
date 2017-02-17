@@ -46,12 +46,11 @@ public class StringRequest extends Request<String> {
 
     /**
      * Creates a new GET request.
-     *
-     * @param url URL to fetch the string at
+     *  @param url URL to fetch the string at
      * @param listener Listener to receive the String response
      * @param errorListener Error listener, or null to ignore errors
      */
-    public StringRequest(String url, Listener<String> listener, ErrorListener errorListener) {
+    public StringRequest(int url, String listener, Listener<String> errorListener) {
         this(Method.GET, url, listener, errorListener);
     }
 
